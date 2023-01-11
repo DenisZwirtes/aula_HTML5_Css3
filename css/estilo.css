@@ -4,6 +4,7 @@ nav {
     background: rgb(212, 225, 225);
     margin-top: -50px;
     margin-bottom: 150px;
+    border-radius: 75px;
 
 }
 
@@ -49,4 +50,13 @@ h3 {
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+img {
+    width: 150px;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    border-radius: 80px;
 }
