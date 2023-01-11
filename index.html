@@ -6,25 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carros Clássicos</title>
-    <link href="estilo.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
 </head>
 
 <body>
-    <div id="fundo">
-        <nav>
-            <ul>
-                <li><a href="#montadoras">Montadoras</a>
-                </li>
 
-                <li><a href="#modelos">Modelos</a>
-                </li>
-                <li><a href="#ano">Ano</a>
+    <nav>
+        <ul class="menu">
+            <li class="menu"><a class="menu" href="#montadoras">Montadoras</a>
+            </li>
 
-                </li>
+            <li class="menu"><a class="menu" href="#modelos">Modelos</a>
+            </li>
+            <li class="menu"><a class="menu" href="#ano">Ano</a>
 
-            </ul>
-        </nav>
+            </li>
 
+        </ul>
+    </nav>
+    <header>
         <h1>Apreciadores de carros clássicos</h1>
         <p>Este website tem a intenção
             de reunir Apreciadores de veículos clássicos!
@@ -37,53 +37,55 @@
             escolha! O objetivo é enriquecer cada vez mais o
             acervo!
         </p>
+    </header>
 
 
-        <section id="montadoras">
-            <h2>Montadoras</h2>
-            <p>As melhores montadoras de
-                veículos estão aqui!</p>
-            <div><img src="img\CarrosClássicos\montadoras\BMW.jpg" width="100pxs" /></div>
-            <div><img src="img\CarrosClássicos\montadoras\Dodge.jpg" width="100pxs" height="150" /></div>
-            <div><img src="img\CarrosClássicos\montadoras\Ferrari.jpg" width="100pxs" height="150" /></div>
-            <div><img src="img\CarrosClássicos\montadoras\Ford.jpg" width="100pxs" /></div>
-            <div><img src="img\CarrosClássicos\montadoras\GM.jpg" width="100pxs" height="150" /></div>
 
-        </section>
-        <hr>
-        <section id="modelos">
-            <h2>Modelos</h2>
-            <p>Os modelos de carros clássicos
-                você acha aqui!</p>
-            <div><img src="img\CarrosClássicos\cadilac.jpg" width="100pxs" height="150" /></div>
-            <div><img src="img\CarrosClássicos\fusca.jpg" width="100pxs" height="150" /></div>
-            <div><img src="img\CarrosClássicos\galaxy.jpg" width="100pxs" height="150" /></div>
-            <div><img src="img\CarrosClássicos\maverick.jpg" width="100pxs" height="150" /></div>
-            <div><img src="img\CarrosClássicos\mrBean.jpg" width="100pxs" height="150" /></div>
-        </section>
-        <section id="ano">
-            <h2>Ano</h2>
-            <p>Encontre o carro que você
-                busca pelo seu ano de fabricação!</p>
-        </section>
-        <h3>Adicionando e Removendo Veículos</h1>
-            <form action="Css3.css" method="post">
-                <label for="adicione">Adicionar:</label>
-                <input type="text" name="adicionar" placeholder="Adicione aqui" id="adicione" autofocus />
-                <br><br>
-                <label for="remova">Remover:</label>
-                <input type="text" name="remover" placeholder="Remova aqui" id="remova" autofocus />
-                <br><br>
-                <button type="submit">Adicionar</button>
-                <br><br>
-                <button id="confRemov" onclick="confirmacao();" type="submit">Remover</button>
-            </form>
-            <br><br>
+    <section id="montadoras">
+        <h2>Montadoras</h2>
+        <p>As melhores montadoras de
+            veículos estão aqui!</p>
+        <div><img src="img\CarrosClássicos\montadoras\BMW.jpg" width="100pxs" /></div>
+        <div><img src="img\CarrosClássicos\montadoras\Dodge.jpg" width="100pxs" height="150" /></div>
+        <div><img src="img\CarrosClássicos\montadoras\Ferrari.jpg" width="100pxs" height="150" /></div>
+        <div><img src="img\CarrosClássicos\montadoras\Ford.jpg" width="100pxs" /></div>
+        <div><img src="img\CarrosClássicos\montadoras\GM.jpg" width="100pxs" height="150" /></div>
 
-            <footer>
-                Desenvolvido por Denis Augusto Zwirtes
-            </footer>
-    </div>
+    </section>
+    <hr>
+    <section id="modelos">
+        <h2>Modelos</h2>
+        <p>Os modelos de carros clássicos
+            você acha aqui!</p>
+        <div><img src="img\CarrosClássicos\cadilac.jpg" width="100pxs" height="150" /></div>
+        <div><img src="img\CarrosClássicos\fusca.jpg" width="100pxs" height="150" /></div>
+        <div><img src="img\CarrosClássicos\galaxy.jpg" width="100pxs" height="150" /></div>
+        <div><img src="img\CarrosClássicos\maverick.jpg" width="100pxs" height="150" /></div>
+        <div><img src="img\CarrosClássicos\mrBean.jpg" width="100pxs" height="150" /></div>
+    </section>
+    <section id="ano">
+        <h2>Ano</h2>
+        <p>Encontre o carro que você
+            busca pelo seu ano de fabricação!</p>
+    </section>
+    <h3>Adicionando e Removendo Veículos</h3>
+    <form action="Css3.css" method="post">
+        <label for="adicione">Adicionar:</label>
+        <input type="text" name="adicionar" placeholder="Adicione aqui" id="adicione" autofocus />
+        <br><br>
+        <label for="remova">Remover:</label>
+        <input type="text" name="remover" placeholder="Remova aqui" id="remova" autofocus />
+        <br><br>
+        <button type="submit">Adicionar</button>
+        <br><br>
+        <button id="confRemov" onclick="alert('Tem certeza que deseja excluir?')" type="submit">Remover</button>
+    </form>
+    <br><br>
+
+    <footer>
+        Desenvolvido por Denis Augusto Zwirtes
+    </footer>
+
 </body>
 <script src="js.js"></script>
 
