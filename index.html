@@ -21,6 +21,11 @@
             <li class="menu"><a class="menu" href="#ano">Ano</a>
 
             </li>
+            <form class="pesquisar" action="index.php" method="get">
+                <label class="pesquisar2" for="pesquisar">Pesquisar</label>
+                <input id="pesquisar" class="pesquisar3" type="text" name="pesquisar" placeholder="O que você procura?">
+                <input class="pesquisar2" type="submit" value="Ok">
+            </form>
 
         </ul>
     </nav>
@@ -71,14 +76,14 @@
     <h3>Adicionando e Removendo Veículos</h3>
     <form action="Css3.css" method="post">
         <label for="adicione">Adicionar:</label>
-        <input type="text" name="adicionar" placeholder="Adicione aqui" id="adicione" autofocus />
+        <input class="campos" type="text" name="adicionar" placeholder="Adicione aqui" id="adicione" autofocus />
         <br><br>
         <label for="remova">Remover:</label>
-        <input type="text" name="remover" placeholder="Remova aqui" id="remova" autofocus />
+        <input class="campos" type="text" name="remover" placeholder="Remova aqui" id="remova" autofocus />
         <br><br>
-        <button type="submit">Adicionar</button>
+        <button id="confBotao" type="submit">Adicionar</button>
         <br><br>
-        <button id="confRemov" onclick="alert('Tem certeza que deseja excluir?')" type="submit">Remover</button>
+        <button id="confBotao" onclick="confirmacao()" type="submit">Remover</button>
     </form>
     <br><br>
 
@@ -87,6 +92,6 @@
     </footer>
 
 </body>
-<script src="js.js"></script>
+<script src="/js/js.js"></script>
 
 </html>

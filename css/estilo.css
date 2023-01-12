@@ -8,11 +8,18 @@ nav {
 
 }
 
+a {
+    text-decoration: none;
+}
+
+
 body {
     background: rgb(173, 192, 187);
     margin: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 
 section {
     margin-top: 150px;
@@ -43,14 +50,49 @@ h3 {
 
 .menu {
     font-size: 20px;
-    padding-left: 50px;
+    margin-left: 20px;
     justify-content: center;
     align-items: center;
-    display: inline-block;
+    display: flex;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+.pesquisar {
+    font-size: 20px;
+    margin-left: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.pesquisar2 {
+    border-radius: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.pesquisar3 {
+    border-radius: 10px;
+    margin-left: 15px;
+    cursor: text;
+}
+
+#confBotao {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.campos {
+    border-radius: 10px;
+
+}
+
+
 
 img {
     width: 150px;
