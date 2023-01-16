@@ -73,15 +73,27 @@
         <p>Encontre o carro que você
             busca pelo seu ano de fabricação!</p>
     </section>
-    <h3>Adicionando e Removendo Veículos</h3>
-    <form action="../aula_html/php/index.php" method="post">
-        <label for="adicione">Adicionar:</label>
-        <input class="campos" type="text" name="adicionar" placeholder="Adicione aqui" id="adicione" autofocus />
+    <h3>Adicionando Veículos</h3>
+    <form id="formulario" action="../aula_html/php/adicionar.php" method="post">
+        <label for="modelo">Digite o Modelo:</label>
+        <input class="campos" type="text" name="modelo" placeholder="Adicione o modelo aqui" id="adicione_modelo"
+            autofocus />
         <br><br>
-        <label for="remova">Remover:</label>
-        <input class="campos" type="text" name="remover" placeholder="Remova aqui" id="remova" autofocus />
+
+
+        <label for="ano">Digite o Ano:</label>
+        <input class="campos" type="text" name="ano" placeholder="Adicione o ano aqui" id="adicione_ano" autofocus />
         <br><br>
         <button id="confBotao" type="submit">Adicionar</button>
+    </form>
+    <br><br>
+    <h3>Removendo Veículos</h3>
+    <form id="formulario" action="../aula_html/php/remover.php" method="post">
+        <label for="remove">Digite o modelo:</label>
+        <input class="campos" type="text" name="modelo" placeholder="Remova aqui" id="remova" autofocus />
+        <br><br>
+        <label for="remove">Digite o ano:</label>
+        <input class="campos" type="text" name="ano" placeholder="Remova aqui" id="remova" autofocus />
         <br><br>
         <button id="confBotao" onclick="confirmacao()" type="submit">Remover</button>
     </form>
